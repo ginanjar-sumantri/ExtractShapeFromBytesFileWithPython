@@ -19,7 +19,6 @@ async def upload_file_map(file: UploadFile = File()):
     return {'result' : geom_wkt}
 
 
-
 def from_map_to_wkt(buffer:bytes, content_type:str):
     try:
         if content_type == "application/x-zip-compressed": ## For .zip file
